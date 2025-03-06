@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cout << "Enter array size: ";
+    cin >> n;
+    int array[n];
+    
+    cout << "\nEnter Elements: " << endl;
+    for(int i = 0; i < n ; i++){
+        cout << "Element [" << i << "] : ";
+        cin >> array[i];
+    }
+
+int x, pos;
+cout << "\nEnetr position: ";
+cin >> pos;
+cout << "Enter value: ";
+cin >> x;
+array[pos] = x;
+
+    cout << "\nPrint the updated array" << endl; 
+    for (int i = 0; i < n; i++) {
+        cout << array[i] << " ";
+    }
+
+    return 0;
+}
