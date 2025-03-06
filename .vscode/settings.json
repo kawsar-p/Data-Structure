@@ -1,0 +1,51 @@
+{
+    "editor.fontSize": 14,
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": true,
+    "editor.renderWhitespace": "all",
+    "editor.cursorBlinking": "smooth",
+    
+    "files.autoSave": "afterDelay",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true
+    },
+
+    "terminal.integrated.fontSize": 14,
+    
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.iconTheme": "vscode-icons",
+    
+    "extensions.ignoreRecommendations": false,
+    
+    "python.languageServer": "Pylance",
+    "python.analysis.autoImportCompletions": true,
+    
+    "javascript.suggest.autoImports": true,
+    "typescript.suggest.autoImports": true,
+    
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+        "editor.tabSize": 4
+    },
+
+    "C_Cpp.default.compilerPath": "C:/MinGW/bin/g++.exe",
+    "C_Cpp.default.intelliSenseMode": "windows-gcc-x64",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.cStandard": "c11",
+    "code-runner.executorMap": {
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+    }
+}
