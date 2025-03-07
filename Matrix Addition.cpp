@@ -1,53 +1,46 @@
-#include <iostream>
-#define SIZE 3 // Size of the matrix
-
+#include<iostream>
 using namespace std;
 
-int main()
-{
-    int A[SIZE][SIZE]; // Matrix 1
-    int B[SIZE][SIZE]; // Matrix 2
-    int C[SIZE][SIZE]; // Resultant matrix
-    
-    // Input elements in first matrix
-    cout << "Enter elements in matrix A of size 3x3: " << endl;
-    for(int row = 0; row < SIZE; row++)
-    {
-        for(int col = 0; col < SIZE; col++)
-        {
-            cin >> A[row][col];
+int main(){
+    cout << "First Matrix: " << endl;
+    int row,col;
+    cout << "Enter Row Number: ";
+    cin >> row;
+
+    cout << "Enter Column Number: ";
+    cin >> col;
+
+    int matrix[row][col];
+    int matrix1[row][col];
+    int matrix3[row][col];
+
+    cout << "\nEnter First Matrix: " << endl;
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < col; j++) {
+            cout << "Matrix[" << i+1 << "][" << j+1 << "]: ";
+            cin >> matrix[i][j];
         }
     }
-    
-    // Input elements in second matrix
-    cout << "\nEnter elements in matrix B of size 3x3: " << endl;
-    for(int row = 0; row < SIZE; row++)
-    {
-        for(int col = 0; col < SIZE; col++)
-        {
-            cin >> B[row][col];
+
+
+    cout << "\nEnter Second Matrix: " << endl;
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < col; j++) {
+            cout << "Matrix[" << i+1 << "][" << j+1 << "]: ";
+            cin >> matrix1[i][j];
         }
     }
-    
-    // Add both matrices A and B entry-wise
-    for(int row = 0; row < SIZE; row++)
-    {
-        for(int col = 0; col < SIZE; col++)
-        {
-            C[row][col] = A[row][col] + B[row][col];
-        }
-    }
-    
-    // Print the resultant matrix C
-    cout << "\nSum of matrices A + B = " << endl;
-    for(int row = 0; row < SIZE; row++)
-    {
-        for(int col = 0; col < SIZE; col++)
-        {
-            cout << C[row][col] << " ";
+
+     cout << "\nMatrix Addition: " << endl;
+
+
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < col; j++) {
+            matrix3[i][j] = matrix[i][j] + matrix1[i][j];
+            cout << matrix3[i][j] << " ";
         }
         cout << endl;
     }
-    
-    return 0;
+
+return 0;
 }
